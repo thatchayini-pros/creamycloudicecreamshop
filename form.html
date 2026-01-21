@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Creamy Cloud Contact Form</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #ffe6f0;
+    }
+
+    .header {
+      background-color: #fff;
+      text-align: center;
+      padding: 30px 20px 10px;
+    }
+
+    .header-content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 25px;
+    }
+
+    #logo {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+      border: 3px solid beige;
+    }
+
+    h1 {
+      color: gold;
+      font-size: 35px;
+    }
+
+    .nav-links {
+      margin-top: 15px;
+    }
+
+    .nav-links a {
+      margin: 0 30px;
+      text-decoration: none;
+      color: #ff69b4;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .nav-links a:hover {
+      color: #d63384;
+    }
+
+    .content-area {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 60px 20px;
+      background: linear-gradient(to right, #ffe6f0, #ffd1dc);
+      flex-wrap: wrap;
+    }
+
+    form {
+      background-color: #ffc0cb;
+      padding: 30px;
+      border-radius: 16px;
+      max-width: 450px;
+      width: 100%;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+      margin: 20px;
+    }
+
+    h2 {
+      text-align: center;
+      color: crimson;
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin: 16px 0 8px;
+      color: #d63384;
+      font-weight: bold;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      border-radius: 8px;
+      border: 2px solid #f99db2;
+      background-color: #fff0f8;
+      font-size: 1rem;
+    }
+
+    input:focus, textarea:focus {
+      outline: none;
+      border-color: #ff66a3;
+      box-shadow: 0 0 8px rgba(255, 102, 163, 0.4);
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1rem;
+      width: 100%;
+      background-color: #ff4d88;
+      color: white;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #e60073;
+    }
+
+    .contact-info {
+      background-color: pink;
+      padding: 30px;
+      border-radius: 15px;
+      margin: 20px;
+      max-width: 400px;
+      width: 100%;
+    }
+
+    .contact-info h3 {
+      font-family: 'Segoe UI', sans-serif;
+      font-style: italic;
+      font-weight: bold;
+      color: rgb(180, 64, 122);
+    }
+
+    .contact-info p {
+      font-size: 16px;
+      color: rgb(245, 4, 124);
+      line-height: 1.7;
+    }
+
+    footer {
+      background-color: #ffc1dc;
+      text-align: center;
+      padding: 15px;
+      font-weight: bold;
+    }
+
+    /* WhatsApp icon */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 1000;
+    }
+
+    .whatsapp-float img {
+      width: 48px;
+      height: 48px;
+    }
+
+    @media (max-width: 768px) {
+      .header-content {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .nav-links a {
+        margin: 0 15px;
+      }
+
+      .content-area {
+        flex-direction: column;
+        padding: 40px 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="header">
+    <div class="header-content">
+      <img id="logo" src="creamycloud.jpg" alt="Creamy Cloud Logo">
+      <h1>𝘾𝙧𝙚𝙖𝙢𝙮 𝘾𝙡𝙤𝙪𝙙 𝙄𝙘𝙚 𝘾𝙧𝙚𝙖𝙢 𝙎𝙝𝙤𝙥</h1>
+    </div>
+    <nav class="nav-links">
+      <a href="home1.html.html">HOME</a>
+      <a href="icecream1.html">ICECREAM</a>
+      <a href="event.html">EVENTS</a>
+      <a href="gifting.html">GIFTING</a>
+      <a href="form.html">CONTACT</a>
+    </nav>
+  </div>
+
+  <!-- Contact Section -->
+  <div class="content-area">
+    <!-- Left: Contact Info -->
+    <div class="contact-info">
+      <h3>Creamy Cloud Ice Cream Shop,</h3>
+      <p>
+        📍 <strong>Address:</strong><br>
+        No. 12, Ice Cream Street,<br>
+        Near AAA Bus Stand,<br>
+        MMM City – 001001<br><br>
+
+        ⏰ <strong>Time:</strong> 10.00 am to 10.00 pm<br>
+        📞 <strong>Phone:</strong> 123 456 7890<br>
+        💬 <strong>WhatsApp:</strong> +123 456 7890<br>
+        📧 <strong>Email:</strong> creamycloudcream@gmail.com
+      </p>
+      <p> For any queries or concerns, please email us</p>
+    </div>
+
+    <!-- Right: Contact Form -->
+    <form id="contactForm">
+      <h2>Contact Us</h2>
+
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required placeholder="Your name"/>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required placeholder="Your email"/>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" required placeholder="Your message"></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+
+  <!-- WhatsApp Floating Icon -->
+  <div class="whatsapp-float">
+    <a href="https://wa.me/1234567890" target="_blank">
+      <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp">
+    </a>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Creamy Cloud. All rights reserved.
+  </footer>
+
+  <!-- JS -->
+  <script>
+    document.getElementById("contactForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      alert("📨 Thank you! Your message has been sent.");
+      this.reset();
+    });
+  </script>
+
+</body>
+</html>
